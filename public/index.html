@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Helpers</title>
+    <script src="js/helpers/xhr.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<body>
+    <div id="container">
+        <button>POST</button>
+        <button>GET</button>
+        <label for="format">send data as </label>
+        <select id="format">
+            <option value="form">form data</option>
+            <option value="json" selected>json data</option>
+        </select>
+        <br />
+        <label for="content">Request body:</label><br />
+        <textarea id="content" cols="80" rows="10">{
+    "toto": "foo",
+    "tata": "bar"
+}</textarea>
+    </div>
+</body>
+</html>
