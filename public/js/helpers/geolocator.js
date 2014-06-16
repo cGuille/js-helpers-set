@@ -145,7 +145,7 @@
      * @param {mixed} value
      */
     function setOption(option, value) {
-        this._options = value;
+        this._options[option] = value;
         if (this.isWatching()) {
             this.restartWatching();
         }
